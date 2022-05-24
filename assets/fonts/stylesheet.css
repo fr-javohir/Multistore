@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Medium.woff2') format('woff2'),
+        url('ProductSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Regular.woff2') format('woff2'),
+        url('ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Thin.woff2') format('woff2'),
+        url('ProductSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Black.woff2') format('woff2'),
+        url('ProductSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Bold.woff2') format('woff2'),
+        url('ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('ProductSans-Light.woff2') format('woff2'),
+        url('ProductSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

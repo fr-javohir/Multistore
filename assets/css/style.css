@@ -1,7 +1,55 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Medium.woff2') format('woff2'),
+        url('../fonts/ProductSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
-body {
-  font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+        url('../fonts/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Thin.woff2') format('woff2'),
+        url('../fonts/ProductSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Black.woff2') format('woff2'),
+        url('../fonts/ProductSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+        url('../fonts/ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Light.woff2') format('woff2'),
+        url('../fonts/ProductSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 *{
     margin: 0;
@@ -13,6 +61,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    font-family: 'Product Sans';
     font-size: 1rem;
 }
 .container{
@@ -86,10 +135,12 @@ body{
 .btn{
     outline: none;
     cursor: pointer;
+    font-family: 'Product Sans';
 }
 .btn-welcome{
-    padding: 2.8rem 14.7rem;
+    padding: 2rem 10rem;
     font-weight: 500;
+    letter-spacing: 1px;
     font-size: 2.4rem;
     line-height: 2.9rem;
     background-color: #47B785;
