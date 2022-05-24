@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1rem;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    text-decoration: none;
+}
+.logo-img{
+    width: 7rem;
+    height: 7rem;
+}
+.logo-text{
+    text-decoration: none;
+    color: #47B785;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.36rem;
+}
+.logo-text span{
+    color: #000;
+}
+.site-header .navigation{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    list-style: none;
+}
+.site-menu{
+    text-decoration: none;
+    color: #6F6D80;
+    line-height: 2.9rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.site-menu.active{
+    color: #000;
+}
+
+.welcome{
+    height: calc(100vh - 11rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.welcome-info{
+    width: 50%;
+}
+.welcome-info-title{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+}
+.welcome-info-desc{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin: 1.8rem 0;
+}
+.btn{
+    outline: none;
+    cursor: pointer;
+}
+.btn-welcome{
+    padding: 2.8rem 14.7rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    background-color: #47B785;
+    color: #fff;
+    border: 0;
+    border-radius: 1.5rem;
+    margin-top: 1.7rem;
+}
+.about{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.about-title{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: right;
+    margin-right: 12rem;
+    transform: translateY(5rem);
+}
+.about-info-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../images/back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 60rem;
+}
+.about-info{
+    width: 50%;
+}
+.about-info-desc{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    width: 80%;
+    margin: auto;
+}
+.free{
+    height: 100vh;
+    margin: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.free-info{
+    width: 50%;
+}
+.free p{
+    width: 90%;
+    margin: auto;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-align: center;
+}
+.updates{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.updates-info{
+    width: 50%;
+}
+.updates-info-desc{
+    width: 80%;
+    margin: auto;
+    font-size: 3.6em;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-align: center;
+}
+.link-span{
+    color: #47B785;
+    position: relative;
+}
+.link-span::after{
+    content: '';
+    position: absolute;
+    bottom: .4rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #47B785;
+
+}
+.convenience{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.convenience-info-desc{
+    width: 85%;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.36rem;
+    text-align: center;
+}
+.social{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+footer.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3.5rem 0;
+}
+.ft-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.ft-heading{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.36rem;
+    margin-bottom: 1rem;
+}
+.ft-nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
