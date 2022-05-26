@@ -62,26 +62,28 @@ html {
 }
 body {
   font-family: "Product Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 .container {
   max-width: 1400px;
   margin: auto;
 }
 .site-header {
-  /* position: fixed;
-     padding: 2rem 14rem; 
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-     */
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* box-shadow: 0 5px 5px rgba(0,0,0,0.3); */
+}
+
+.nav__fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 .logo {
   display: flex;
@@ -151,7 +153,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 2rem 10rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   font-size: 2.4rem;
   line-height: 2.9rem;
@@ -164,7 +166,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .about-title {
   font-weight: 700;
@@ -188,7 +190,7 @@ body {
 }
 .about-info-desc {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 2.9rem;
   width: 70%;
   transform: translateX(5rem);
@@ -267,11 +269,11 @@ body {
   align-items: center;
   width: 100%;
 }
-.social-link{
+.social-link {
   position: relative;
   transition: 0.5s;
 }
-.social-link:hover{
+.social-link:hover {
   transform: translateY(-1rem);
 }
 .social-link::after {
@@ -318,48 +320,49 @@ footer.container {
   color: #000;
   font-size: 2rem;
   font-weight: 400;
+  transition: 300ms;
 }
-
+.link-hover:hover {
+  color: #47b785;
+}
 /* Sign In Page */
-.signin-body{
-    height: 100vh;
+.wrapper {
+  height: 100vh;
 }
-.signin-main {
+.account__main {
   display: flex;
   align-items: center;
 }
-.signin-heading {
+.verification .account__main {
+  margin-top: 7.5rem;
+}
+.account__illustration {
+  margin-right: 10rem;
+}
+.verification .account__illustration {
+  margin-right: 0;
+  margin-left: 15rem;
+}
+.account__main-heading {
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.85rem;
   margin-bottom: 2.1rem;
 }
-.signin-img-box{
-    margin-right: 10rem;
+.account__main-info {
+  margin-left: 10rem;
 }
-.ver-main{
-  display: flex;
-  align-items: center;
-  margin-top: 7.5rem;
-}
-.ver-main .singin-info{
+.verification .account__main-info {
   margin-left: 0;
   margin-right: 15rem;
 }
-.ver-main .signin-img-box{
-  margin-right: 0;
-  margin-left: 15rem;
-}
-.singin-info{
-  margin-left: 10rem;
-}
-.signin-form {
+.account__form {
   display: flex;
   flex-direction: column;
   gap: 2.2rem;
   width: 40rem;
 }
-.input-control {
+.account__input-control {
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -367,14 +370,14 @@ footer.container {
   border: 1px solid #c2c1c1;
   border-radius: 1rem;
 }
-.signin-form label {
+.account__form label {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-family: "Product Sans";
   color: #5e5e5e;
 }
-.signin-form input {
+.account__form input {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.45rem;
@@ -382,13 +385,13 @@ footer.container {
   border: none;
   outline: none;
 }
-.signin-form input::placeholder {
+.account__form input::placeholder {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.45rem;
   color: #999;
 }
-.signin-form .submit {
+.account__form .submit {
   background-color: #47b785;
   width: 100%;
   padding: 2.3rem 0;

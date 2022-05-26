@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="signin-body">
-    <header class="site-header container">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper signin">
+      <header class="site-header container">
         <a href="#" class="logo">
-            <img src="../images/logo.svg" alt="logo img" class="logo-img" />
-            <p class="logo-text">Multi<span>store</span></p>
+          <img src="../images/logo.svg" alt="logo img" class="logo-img" />
+          <p class="logo-text">Multi<span>store</span></p>
         </a>
-    </header>
-    <main class="signin-main container">
-        <div class="signin-img-box">
-            <img width="650" src="../images/Signin/illustration.svg" alt="illustration">
+      </header>
+
+      <main class="account__main container">
+        <div class="account__illustration">
+          <img
+            width="650"
+            src="../images/Signin/illustration.svg"
+            alt="illustration"
+          />
         </div>
-        <div class="singin-info">
-            <h2 class="signin-heading">Войти</h2>
-            <form class="signin-form">
-                <div class="input-control">
-                    <label for="email">Email или номер телефона</label>
-                    <input type="email" placeholder="example@mail.ru">
-                </div>
-                <div class="input-control">
-                    <label for="password">Пароль</label>
-                    <input type="password" placeholder="Ваш пароль">
-                </div>
-                <button class="btn submit">Войти</button>
-                <a href="signup.html">Sign Up</a>
-            </form>
+        <div class="account__main-info">
+          <h2 class="account__main-heading">Войти</h2>
+          <form class="account__form">
+            <div class="account__input-control">
+              <label for="email">Email или номер телефона</label>
+              <input type="email" placeholder="example@mail.ru" />
             </div>
-    </main>
-
-</body>
-
+            <div class="account__input-control">
+              <label for="password">Пароль</label>
+              <input type="password" placeholder="Ваш пароль" />
+            </div>
+            <button class="btn submit">Войти</button>
+            <a href="signup.html">Sign Up</a>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
