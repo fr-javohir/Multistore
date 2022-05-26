@@ -340,6 +340,7 @@ footer.container {
 .ver-main{
   display: flex;
   align-items: center;
+  margin-top: 7.5rem;
 }
 .ver-main .singin-info{
   margin-left: 0;
