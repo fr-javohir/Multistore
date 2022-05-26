@@ -7,31 +7,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="signin-body">
-    <header class="site-header container">
-      <a href="#" class="logo">
-        <img src="../images/logo.svg" alt="logo img" class="logo-img" />
-        <p class="logo-text">Multi<span>store</span></p>
-      </a>
-    </header>
-    <main class="ver-main container">
-      <div class="singin-info">
-        <h2 class="signin-heading">Подтверждение почты</h2>
-        <form class="signin-form">
-          <div class="input-control">
-            <label for="email">Код пароль</label>
-            <input type="email" placeholder="6-ти значный код-пароль" />
-          </div>
-          <button class="btn submit">Подтвердить</button>
-        </form>
-      </div>
-      <div class="signin-img-box">
-        <img
-          width="620"
-          src="../images/Verification/illustration.svg"
-          alt="illustration"
-        />
-      </div>
-    </main>
+  <body>
+    <div class="wrapper verification">
+      <header class="site-header container">
+        <a href="#" class="logo">
+          <img src="../images/logo.svg" alt="logo img" class="logo-img" />
+          <p class="logo-text">Multi<span>store</span></p>
+        </a>
+      </header>
+
+      <main class="account__main container">
+        <div class="account__main-info">
+          <h2 class="account__main-heading">Подтверждение почты</h2>
+          <form class="account__form">
+            <div class="account__input-control">
+              <label for="email">Код пароль</label>
+              <input type="email" placeholder="6-ти значный код-пароль" />
+            </div>
+            <button class="btn submit">Подтвердить</button>
+          </form>
+        </div>
+        <div class="account__illustration">
+          <img
+            width="620"
+            src="../images/Verification/illustration.svg"
+            alt="illustration"
+          />
+        </div>
+      </main>
+    </div>
   </body>
 </html>
