@@ -82,6 +82,9 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
+  transition: 300ms;
+}
+.nav__fixed.scroll{
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 .logo {
@@ -176,6 +179,9 @@ body {
   text-align: right;
   margin-right: 12rem;
   transform: translateY(5rem);
+}
+.about-title br{
+  display: none;
 }
 .about-info-box {
   display: flex;
@@ -418,6 +424,9 @@ footer.container {
   .container{
     padding: 0 2.5rem;
   }
+  .site-header{
+    padding: .5rem 0;
+  }
   .site-header .navigation {
     display: none;
   }
@@ -429,75 +438,81 @@ footer.container {
     width: 100%;
   }
   .logo-img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
   }
   .logo-text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.95rem;
   }
   .welcome {
-    height: 100vh;
+    height: calc(100vh + 4rem);
     flex-direction: column-reverse;
     justify-content: center;
+    gap: 2rem;
   }
   .welcome-img-box img{
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
   }
   .welcome-info{
     width: 100%;
     text-align: center;
   }
   .welcome-info-title{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 2.9rem;
   }
   .welcome-info-desc{
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.7rem;
     margin: 1.2rem 0 2rem 0;
   }
   .btn-welcome{
     width: 100%;
-    padding: 1.2rem 0;
+    padding: 1.5rem 0;
     border-radius: .6rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.7rem;
   }
   .about{
     height: 100vh;
-    flex-direction: column;
-    justify-content: flex-start;
+    padding-top: 3rem;
   }
   .about-title{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 2.9rem;
     text-align: center;
-    margin-right: unset;
+    margin: 0 auto;
+    transform: unset;
+  }
+  .about-title br{
+    display: block;
   }
   .about-info-box{
+    background: unset;
     flex-direction: column-reverse;
-    justify-content: unset;
-    background: url('../images/bg\ mob.svg');
-    background-size: 140%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 30rem;
+    min-height: 65rem;
   }
   .about-img{
     width: 100%;
     height: unset;
-    transform: translateY(12.5rem);
   }
   .about-info{
+    flex-basis: 60%;    
     width: 100%;
+    background: url('../images/bg\ mob.svg');
+    background-position: center 60%;
+    background-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about-info-desc{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.45rem;
-    transform: unset;
+    transform: translate(2rem,-2rem);
   }
   .free{
     margin: 0;
