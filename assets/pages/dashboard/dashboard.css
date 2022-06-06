@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Medium.woff2") format("woff2"),
+    url("../fonts/ProductSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Regular.woff2") format("woff2"),
+    url("../fonts/ProductSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Thin.woff2") format("woff2"),
+    url("../fonts/ProductSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Black.woff2") format("woff2"),
+    url("../fonts/ProductSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Bold.woff2") format("woff2"),
+    url("../fonts/ProductSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/ProductSans-Light.woff2") format("woff2"),
+    url("../fonts/ProductSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Product Sans";
+  font-size: 1.6rem;
+  background-color: #e5e5e5;
+  max-width: 1600px;
+  margin: auto;
+}
+.admin {
+  min-height: 100vh;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+.dash__header {
+  padding: 2rem 0;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+}
+.dash__account {
+  display: flex;
+  margin-left: auto;
+  padding: 0.5rem;
+  border: 0.5rem solid #47b785;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main {
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+.sidebar {
+  height: inherit;
+  padding: 2rem 0;
+}
+.sidebar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sidebar__list-item {
+  text-decoration: none;
+  width: 25rem;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  transition: background 0.5s;
+}
+.sidebar__list-item.active {
+  background: #fff;
+  filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.08))
+    drop-shadow(-3px -3px 15px rgba(0, 0, 0, 0.08));
+}
+.sidebar__list-item span {
+  font-size: 2rem;
+  line-height: 2.45rem;
+  color: #b9bccd;
+}
+.sidebar__list-item.active span {
+  color: #000;
+}
+.shops {
+  width: 100%;
+  padding: 2rem;
+}
+.shop__cards-box {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+}
+.shop__card {
+  width: 30rem;
+  height: 27rem;
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.08),
+    3px 3px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+.shop__card-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+}
+.shop__card-link {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #63b4ff;
+}
+.shop__card-body {
+  margin: 2.7rem 0;
+}
+.shop__card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.6rem 0;
+}
+.shop__card-item span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.answer-color {
+  color: #47b785;
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  font-family: "Product Sans";
+}
+.btn-add {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 2rem;
+}
+.btn-add span {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.nothing {
+  margin-top: 2rem;
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.08),
+    3px 3px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+.cat-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.cat-head {
+  justify-content: space-between;
+}
+.cat-acc {
+  margin: unset;
+}
+.back {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+.back-icon {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.back-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.dash__header-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.btn-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 4.5rem;
+  border: 0;
+  border-radius: 3rem;
+  background-color: #47b785;
+  color: #fff;
+}
+.category__table {
+  padding: 4rem 4.5rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.08),
+    3px 3px 15px rgba(0, 0, 0, 0.08);
+  width: 62.5vw;
+  display: grid;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+.thead h3 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.thead,
+.row {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 4fr);
+  gap: 5rem;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+.actions.online {
+  justify-content: space-between;
+  align-items: center;
+}
+.actions div {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f4f5;
+  border-radius: 50%;
+}
+.action__title {
+  text-align: right;
+  margin-right: 5rem;
+}
+.action__title-pro {
+  text-align: right;
+  margin-right: 2.5rem;
+}
+.thead-pro,
+.row-pro {
+  display: grid;
+  grid-template-columns: 1fr repeat(6, 2fr);
+  align-items: center;
+}
+.tabs {
+  display: flex;
+  width: 100%;
+  background: #eeeeef;
+  box-shadow: -3px -3px 15px rgba(0, 0, 0, 0.08),
+    3px 3px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 0.4rem;
+  margin-top: 2rem;
+}
+.tabs > a {
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  padding: 1.2rem 0;
+}
+.tab-act {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05), -1px -1px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
